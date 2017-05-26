@@ -1610,8 +1610,9 @@ customize the resulting theme."
                           :foreground ,blue :background ,base03))))
      `(org-agenda-done ((,class (:foreground ,base01 :slant italic))))
      `(org-archived ((,class (:foreground ,base01 :weight normal))))
-     `(org-block ((,class (:foreground ,base01))))
-     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic))))
+     `(org-block ((,class (:foreground ,base01 :background ,base03))))
+     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic :background ,base03))))
+     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic :background ,base03))))
      `(org-checkbox ((,class (:background ,base03 :foreground ,base0
                                           :box (:line-width 1 :style released-button)))))
      `(org-code ((,class (:foreground ,base01))))
