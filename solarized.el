@@ -137,6 +137,7 @@ Alpha should be a float between 0 and 1."
   (declare (indent 0))
   `(let* ((class '((class color) (min-colors 89)))
          (variant ,variant)
+         (s-base04    "#002030")
          (s-base03    "#002b36")
          (s-base02    "#073642")
          ;; emphasized content
@@ -150,6 +151,7 @@ Alpha should be a float between 0 and 1."
          (s-base2     "#eee8d5")
          ;; background light
          (s-base3     "#fdf6e3")
+         (s-base4     "#f7f0e0")
 
          ;; Solarized accented colors
          (yellow    "#b58900")
@@ -189,6 +191,7 @@ Alpha should be a float between 0 and 1."
          (base02 (if (eq variant 'light) s-base2 s-base02))
          (base3 (if (eq variant 'light) s-base03 s-base3))
          (base03 (if (eq variant 'light) s-base3 s-base03))
+         (base04 (if (eq variant 'light) s-base4 s-base04))
 
          ;; Line drawing color
          ;;
@@ -1610,9 +1613,9 @@ customize the resulting theme."
                           :foreground ,blue :background ,base03))))
      `(org-agenda-done ((,class (:foreground ,base01 :slant italic))))
      `(org-archived ((,class (:foreground ,base01 :weight normal))))
-     `(org-block ((,class (:foreground ,base01 :background ,base03))))
-     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic :background ,base03))))
-     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic :background ,base03))))
+     `(org-block ((,class (:foreground ,base01 :background ,base04))))
+     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic :background ,base04))))
+     `(org-block-begin-line ((,class (:foreground ,base01 :slant italic :background ,base04))))
      `(org-checkbox ((,class (:background ,base03 :foreground ,base0
                                           :box (:line-width 1 :style released-button)))))
      `(org-code ((,class (:foreground ,base01))))
